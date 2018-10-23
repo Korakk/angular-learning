@@ -1,7 +1,6 @@
 # angular-learning
 Angular 6 Tutorial
 
-
 # Ng6
 To run all angular commands use ng [command name] --help
 
