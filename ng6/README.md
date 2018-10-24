@@ -32,38 +32,67 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-#Index.html
+# Index.html
 Working in this just to import material, icons, custom google web phone...
 
-#app-routing
+# app-routing
 Define some routes
 
-#app-components
+# app-components
 Component --> provides you with the basic building box of your app.
 When we create a component, angular-cli generates 4 files (app.component.html, app.component.scss, app.component.spec.ts(test file-do not worry abou this file),
 app.component.ts).
 
-#app-module
+# app-module
 Before tag any component, look at this file.
 
 Way to work, use angular-cli to generate components and services.
 Automatically update this file.
 When we will use animations and so on, we will add to the imports section.
 
-#Generate our component
+# Generate our component
 
 Use angular-cli --> ``` ng generate component [name] ```
     You can do it in a shorter way --> ``` ng g c [name]```
 
 Modify index html to modify general html(app one), and add a div and inside the component you wanna create/use. Using selector as a tag.
 
-#router link
+# router link
 used to direct user to diferent routes
 
-#material.io
+# material.io
 Gives u the html u want of icons.
-#CSS
-##grid-template-columns
+# CSS
+## grid-template-columns
 first parameter is the first part of the sidebar and the second part is the second parameter.
 
 Ordre, primer el css general + add imports to general html and build specific component html structure, després el concret.
+
+# Routing Files
+## sidebar app-routing
+Just import the components we want to route.
+
+
+# Services
+USe angular-cli to generate a service.
+The purpose of the service files is if we have some type of reusable code that we want access from any of our components we will create a service file(api data).
+## Important
+Angular comes with a built-in http client --> second import of the data.service.ts
+
+Inside the class we can create an instance of the httpclient.
+
+## Web that works as a server
+jsonplaceholder.typicode.com
+
+# Observable
+Will hold all the data recieved from the server.
+
+To create one, indicate it with a $ at the end of variable name, like this --> users$: ...
+
+
+# ngFor
+
+*ngFor="let user of user$"
+
+### What's happening here?
+Basically ngFor allows you to iterate on an array or array of objects. Name is the one we gave to interpollation.

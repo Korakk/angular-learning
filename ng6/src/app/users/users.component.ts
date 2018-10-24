@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-users',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
 
-  constructor() { }
+  users$: Object;
 
-  ngOnInit() {
+  constructor(private data: DataService) { }
+
+  ngOnInit() {//Any code inside here will execute in init.
+    //access to properties on our dataservice is like this:
+    this.data.getUsers().subscribe( //subscribe to the observable
+      data => this.users$ =  data
+    )
   }
 
 }
