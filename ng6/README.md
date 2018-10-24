@@ -56,3 +56,14 @@ Use angular-cli --> ``` ng generate component [name] ```
     You can do it in a shorter way --> ``` ng g c [name]```
 
 Modify index html to modify general html(app one), and add a div and inside the component you wanna create/use. Using selector as a tag.
+
+#router link
+used to direct user to diferent routes
+
+#material.io
+Gives u the html u want of icons.
+#CSS
+##grid-template-columns
+first parameter is the first part of the sidebar and the second part is the second parameter.
+
+Ordre, primer el css general + add imports to general html and build specific component html structure, després el concret.
