@@ -96,3 +96,23 @@ To create one, indicate it with a $ at the end of variable name, like this --> u
 
 ### What's happening here?
 Basically ngFor allows you to iterate on an array or array of objects. Name is the one we gave to interpollation.
+
+
+# Activated Route
+To get the params of the url.
+
+# Class binding
+Detect which place we are.
+It allows to determine which route we are currently on and that will allow us to style it blue when the user is on it, etc.
+
+#Angular animations
+App module file: import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+Users.component: import { trigger,style,transition,animate,keyframes,query,stagger } from '@angular/animations';
+                  add animations array to the components. You can have multiple triggers if you have multiple animations on the same component.
+
+Buscar-les per internet, too hard.
+
+
+# ng build
+Do it with --prod reduce the size of the elements.
+Without it, elements are heavier.
